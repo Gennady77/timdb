@@ -23,3 +23,10 @@ dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# uswds design system
+/src/scss/theme/
+/src/scss/js/
+/src/scss/img/
+/src/scss/fonts/
+/src/scss/css/
