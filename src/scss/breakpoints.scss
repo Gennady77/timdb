@@ -1,0 +1,13 @@
+@import './mixins';
+
+@include media('max-width: 1143px', 'min-width: 888px') {
+  #root {
+    --grid-items-per-row: 3;
+  }
+}
+
+@include media('max-width: 887px') {
+  #root {
+    --grid-items-per-row: 2;
+  }
+}

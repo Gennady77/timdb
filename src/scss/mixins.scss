@@ -1,0 +1,16 @@
+@mixin media ($features...) {
+  $media-features: '';
+
+  @each $feature in $features {
+    $op: '';
+
+    @if ($media-features != '') {
+      $op: ' and ';
+    }
+    $media-features: $media-features + $op + '(#{$feature})';
+  }
+
+  @media screen and #{$media-features} {
+    @content;
+  }
+}

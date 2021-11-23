@@ -1,0 +1,8 @@
+{
+    "name": "timdb-server",
+    "verbose": true,
+    "roots": ["server/"],
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "detectOpenHandles": true
+}

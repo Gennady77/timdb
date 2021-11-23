@@ -5,7 +5,7 @@ const Home = React.lazy(() => import('./pages/Home'))
 
 const App = () => {
     return (
-        <Suspense fallback='loading...'>
+        <Suspense fallback='Application is loading...'>
             <Switch>
                 <Route exact path='/'>
                     <Home />
