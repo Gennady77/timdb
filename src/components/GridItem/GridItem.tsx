@@ -17,7 +17,7 @@ const GridItem: React.FC<Props> = ({data}) => {
                     <img src={data.channelSnippetThumbneil} alt={data.channelSnippetThumbneil} />
                 </div>
                 <div className="timdb-grid-item__meta">
-                    <h3>{data.snippetTitle}</h3>
+                    <div className="timdb-grid-item__meta__title">{data.snippetTitle}</div>
                 </div>
             </div>
         </div>
