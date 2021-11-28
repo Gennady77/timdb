@@ -10,6 +10,7 @@ export type VideoPreview = {
     channelId: string;
     channelTitle: string;
     channelSnippetThumbneil: string;
+    statisticsViewCount: number;
 };
 
 const Home: React.FC<Props> = () => {
@@ -17,8 +18,9 @@ const Home: React.FC<Props> = () => {
         snippetTitle: 'Джони нашел себе невесту! Шоу Карины Кросс и Дани Милохина. Кто твой подписчик?',
         snippetThumbneil: 'https://i.ytimg.com/vi/EAvcEGUzy1c/sddefault.jpg',
         channelId: 'UCHK357UDDmL6EMTb4YPE7ew',
-        channelTitle: 'GEORGY KAVKAZ',
-        channelSnippetThumbneil: 'https://yt3.ggpht.com/ytc/AKedOLQRvGzgc3l7KeQvXLnhKpjgbV3kYLueRVwGOC5k=s88-c-k-c0x00ffffff-no-rj'
+        channelTitle: 'Слава Комиссаренко «Опрятный, свежий и чистый»',
+        channelSnippetThumbneil: 'https://yt3.ggpht.com/ytc/AKedOLQRvGzgc3l7KeQvXLnhKpjgbV3kYLueRVwGOC5k=s88-c-k-c0x00ffffff-no-rj',
+        statisticsViewCount: 1256784,
     });
 
     const gridContent = videoList.map(video => <GridItem data={video} />);
