@@ -11,6 +11,7 @@ export type VideoPreview = {
     channelTitle: string;
     channelSnippetThumbneil: string;
     statisticsViewCount: number;
+    snippetPublishedAt: string;
 };
 
 const Home: React.FC<Props> = () => {
@@ -21,6 +22,7 @@ const Home: React.FC<Props> = () => {
         channelTitle: 'Слава Комиссаренко «Опрятный, свежий и чистый»',
         channelSnippetThumbneil: 'https://yt3.ggpht.com/ytc/AKedOLQRvGzgc3l7KeQvXLnhKpjgbV3kYLueRVwGOC5k=s88-c-k-c0x00ffffff-no-rj',
         statisticsViewCount: 1256784,
+        snippetPublishedAt: '2021-11-27T19:45:40Z',
     });
 
     const gridContent = videoList.map(video => <GridItem data={video} />);

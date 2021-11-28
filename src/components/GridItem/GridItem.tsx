@@ -9,7 +9,7 @@ const GridItem: React.FC<Props> = ({data}) => {
     return (
         <div className="timdb-grid-item">
             <div className="timdb-grid-item__thumbnail">
-                <img src={data.snippetThumbneil} alt={data.snippetThumbneil} />
+                <img src={data.snippetThumbneil} alt={data.snippetTitle} />
             </div>
             <div className="timdb-grid-item__detailes">
                 <div className="timdb-grid-item__avatar">
@@ -39,7 +39,7 @@ const GridItem: React.FC<Props> = ({data}) => {
                         </div>
                         <div className="timdb-grid-item__meta__block-line">
                             <div className="timdb-grid-item__meta-block">{data.statisticsViewCount} views</div>
-                            <div className="timdb-grid-item__meta-block">10 months ago</div>
+                            <div className="timdb-grid-item__meta-block">{ data.snippetPublishedAt }</div>
                         </div>
                     </div>
                 </div>
